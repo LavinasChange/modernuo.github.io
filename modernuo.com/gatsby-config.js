@@ -1,8 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `ModernUO`,
+    description: `Bringing Ultima Online into the modern era`,
+    author: `@modernuo`,
+    social: [
+      {
+        icon: `github`,
+        url: `https://github.com/modernuo`,
+      },
+      {
+        icon: `twitter`,
+        url: `https://twitter.com/modernuo`,
+      },      
+      {
+        icon: `reddit`,
+        url: `https://www.reddit.com/r/ModernUO`,
+      },
+
+      {
+        icon: `patreon`,
+        url: `https://www.patreon.com/modernuo`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +34,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
